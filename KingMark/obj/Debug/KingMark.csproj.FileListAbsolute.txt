@@ -1,0 +1,12 @@
+D:\Project\KingMark\KingMark\bin\Debug\KingMark.exe
+D:\Project\KingMark\KingMark\bin\Debug\KingMark.pdb
+D:\Project\KingMark\KingMark\bin\Debug\MohammadDayyanCalendar.dll
+D:\Project\KingMark\KingMark\bin\Debug\MohammadDayyanCalendar.xml
+D:\Project\KingMark\KingMark\obj\Debug\KingMark.csprojResolveAssemblyReference.cache
+D:\Project\KingMark\KingMark\obj\Debug\MohammadDayyan.about_me.resources
+D:\Project\KingMark\KingMark\obj\Debug\MohammadDayyan.FormKingMark.resources
+D:\Project\KingMark\KingMark\obj\Debug\MohammadDayyan.Properties.Resources.resources
+D:\Project\KingMark\KingMark\obj\Debug\KingMark.csproj.GenerateResource.Cache
+D:\Project\KingMark\KingMark\obj\Debug\KingMark.csproj.CoreCompileInputs.cache
+D:\Project\KingMark\KingMark\obj\Debug\KingMark.exe
+D:\Project\KingMark\KingMark\obj\Debug\KingMark.pdb

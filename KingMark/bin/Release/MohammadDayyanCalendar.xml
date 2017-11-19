@@ -1,0 +1,246 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MohammadDayyanCalendar</name>
+    </assembly>
+    <members>
+        <member name="T:MohammadDayyanCalendar.MDCalendar">
+            <summary>
+            کلاس تقویم شمسی ---
+            برنامه نویس : محمد دیان ---
+            mds_soft@yahoo.com
+            </summary>
+        </member>
+        <member name="F:MohammadDayyanCalendar.MDCalendar.FarsiYearNumber">
+            <summary>
+            سال شمسی به صورت عدد 4 رقمی
+            </summary>
+        </member>
+        <member name="F:MohammadDayyanCalendar.MDCalendar.EnglishYearNumber">
+            <summary>
+            سال میلادی به صورت عدد 4 رقمی
+            </summary>
+        </member>
+        <member name="F:MohammadDayyanCalendar.MDCalendar.FarsiMonthName">
+            <summary>
+            نام ماه شمسی به صورت کامل | فروردین ... اسفند
+            </summary>
+        </member>
+        <member name="F:MohammadDayyanCalendar.MDCalendar.EnglishMonthName1">
+            <summary>
+            نام ماههای سال میلادی به فارسی | ژانویه ... دسامبر
+            </summary>
+        </member>
+        <member name="F:MohammadDayyanCalendar.MDCalendar.EnglishMonthName2">
+            <summary>
+            نام ماههای سال میلادی به انگلیسی | January ... Desember
+            </summary>
+        </member>
+        <member name="F:MohammadDayyanCalendar.MDCalendar.FarsiDayOfWeek">
+            <summary>
+            نام روز هفته به صورت کامل | شنبه ... جمعه
+            </summary>
+        </member>
+        <member name="F:MohammadDayyanCalendar.MDCalendar.EnglishDayOfWeek">
+            <summary>
+            نام روز هفته میلادی | Saturday ... Friday
+            </summary>
+        </member>
+        <member name="F:MohammadDayyanCalendar.MDCalendar.FarsiShortDayOfWeek">
+            <summary>
+            نام روز هفته شمسی به صورت کوتاه | ش ... ج
+            </summary>
+        </member>
+        <member name="F:MohammadDayyanCalendar.MDCalendar.FarsiDayNumber">
+            <summary>
+            تعداد روزهای سپری شده از ماه شمسی به صورت عدد تک رقمی
+            </summary>
+        </member>
+        <member name="F:MohammadDayyanCalendar.MDCalendar.EnglishDayNumber">
+            <summary>
+            تعداد روزهای سپری شده از ماه میلادی به صورت عدد تک رقمی
+            </summary>
+        </member>
+        <member name="F:MohammadDayyanCalendar.MDCalendar.FarsiMonthNumber">
+            <summary>
+            نام ماه شمسی به صورت عدد تک رقمی
+            </summary>
+        </member>
+        <member name="F:MohammadDayyanCalendar.MDCalendar.EnglishMonthNumber">
+            <summary>
+            نام ماه میلادی به صورت عدد تک رقمی
+            </summary>
+        </member>
+        <member name="F:MohammadDayyanCalendar.MDCalendar.DayOfWeekNumber">
+            <summary>
+            نام روز هفته شمسی به صورت عدد تک رقمی
+            </summary>
+        </member>
+        <member name="F:MohammadDayyanCalendar.MDCalendar.Hour1">
+            <summary>
+            ساعت به صورت 0 ... 23
+            </summary>
+        </member>
+        <member name="F:MohammadDayyanCalendar.MDCalendar.Hour2">
+            <summary>
+            ساعت به صورت 0 ... 12
+            </summary>
+        </member>
+        <member name="F:MohammadDayyanCalendar.MDCalendar.Minute">
+            <summary>
+            دقیقه
+            </summary>
+        </member>
+        <member name="F:MohammadDayyanCalendar.MDCalendar.Second">
+            <summary>
+            ثانیه
+            </summary>
+        </member>
+        <member name="F:MohammadDayyanCalendar.MDCalendar.AmPmFarei">
+            <summary>
+            ق.ظ ویا ب.ظ
+            </summary>
+        </member>
+        <member name="F:MohammadDayyanCalendar.MDCalendar.AmPmEnglish">
+            <summary>
+            AM or PM
+            </summary>
+        </member>
+        <member name="M:MohammadDayyanCalendar.MDCalendar.Time">
+            <summary>
+            Returns the current time measured in the number of seconds since the Unix Epoch (January 1 1970 00:00:00 GMT).  
+            </summary>
+            <returns>تعداد ثانیه های سپری شده از اولین نیمه شب 1970 تا کنون ، به وقت گرینویچ</returns>
+        </member>
+        <member name="M:MohammadDayyanCalendar.MDCalendar.Date(System.String,System.Double)">
+            <summary>
+            محاسبه تاریخ از روی ثانیه های ورودی
+            </summary>
+            <param name="Format">Y | y | Z | M | m | E | e | P | D | d | W | w | F | G | A | H | h | i | s</param>
+            <param name="seconds">ثانیه</param>
+            <returns>تاریخ بر اساس فرمت ورودی</returns>
+        </member>
+        <member name="M:MohammadDayyanCalendar.MDCalendar.Mktime(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            تولید تعداد ثانیه های گذشته از اولین نیمه شب 1970 تا تاریخ ورودی
+            </summary>
+            <param name="year">سال</param>
+            <param name="month">ماه</param>
+            <param name="day">روز</param>
+            <param name="hour">ساعت</param>
+            <param name="minute">دقیقه</param>
+            <param name="second">ثانیه</param>
+            <returns>تعداد ثانیه های گذشته از اولین نیمه شب 1970 تا تاریخ ورودی</returns>
+        </member>
+        <member name="M:MohammadDayyanCalendar.MDCalendar.CalculateDate(System.DateTime)">
+            <summary>
+            محاسبه تاریخ
+            </summary>
+            <param name="DateTime">ورودی از نوع زمان</param>
+        </member>
+        <member name="M:MohammadDayyanCalendar.MDCalendar.CheckFormat(System.String)">
+            <summary>
+            فرمت رشته ورودی را بررسی کرده و متناسب با آن خروجی تولید می کند
+            </summary>
+            <param name="Format">Y | y | Z | M | m | E | e | P | D | d | W | w | F | G | A | H | h | i | s</param>
+        </member>
+        <member name="P:MohammadDayyanCalendar.MDCalendar.GetFarsiDay">
+            <summary>
+            تعداد روزهای سپری شده از ماه شمسی به صورت یک عدد دو رقمی 
+            </summary>
+        </member>
+        <member name="P:MohammadDayyanCalendar.MDCalendar.GetEnglishDay">
+            <summary>
+            تعداد روزهای سپری شده از ماه میلادی به صورت یک عدد دو رقمی 
+            </summary>
+        </member>
+        <member name="P:MohammadDayyanCalendar.MDCalendar.GetFarsiMonthName">
+            <summary>
+            نام ماه شمسی
+            </summary>
+        </member>
+        <member name="P:MohammadDayyanCalendar.MDCalendar.GetEnglishMonthName1">
+            <summary>
+            نام ماههای سال میلادی به فارسی | ژانویه ... نوامبر
+            </summary>
+        </member>
+        <member name="P:MohammadDayyanCalendar.MDCalendar.GetEnglishMonthName2">
+            <summary>
+            نام ماههای سال میلادی به انگلیسی | January ... Desember 
+            </summary>
+        </member>
+        <member name="P:MohammadDayyanCalendar.MDCalendar.GetFarsiMonthNumber">
+            <summary>
+            نام ماه شمسی به صورت عدد دو رقمی  |  
+            مثال :
+            فروردین = 01
+            </summary>
+        </member>
+        <member name="P:MohammadDayyanCalendar.MDCalendar.GetEnglishMonthNumber">
+            <summary>
+            نام ماه میلادی به صورت عدد دو رقمی
+            </summary>
+        </member>
+        <member name="P:MohammadDayyanCalendar.MDCalendar.GetFarsiDayOfWeek">
+            <summary>
+            نام روز هفته شمسی به صورت کامل
+            </summary>
+        </member>
+        <member name="P:MohammadDayyanCalendar.MDCalendar.GetEnglishDayOfWeek">
+            <summary>
+            نام روز هفته میلادی
+            </summary>
+        </member>
+        <member name="P:MohammadDayyanCalendar.MDCalendar.GetShortDayOfWeek">
+            <summary>
+            نام روز هفته شمسی به صورت کوتاه
+            </summary>
+        </member>
+        <member name="P:MohammadDayyanCalendar.MDCalendar.GetDayOfWeekNumber">
+            <summary>
+            نام روز هفته به صورت عدد |
+            1 = شنبه
+            </summary>
+        </member>
+        <member name="P:MohammadDayyanCalendar.MDCalendar.GetFarsiYearNumber">
+            <summary>
+            سال شمسی به صورت 4 رقمی
+            </summary>
+        </member>
+        <member name="P:MohammadDayyanCalendar.MDCalendar.GetEnglishYearNumber">
+            <summary>
+            سال میلادی به صورت عدد 4 رقمی
+            </summary>
+        </member>
+        <member name="P:MohammadDayyanCalendar.MDCalendar.GetAmPmFarsi">
+            <summary>
+            قبل از ظهر و یا بعدازظهر را نشان می دهد
+            </summary>
+        </member>
+        <member name="P:MohammadDayyanCalendar.MDCalendar.GetAmPmEnglish">
+            <summary>
+            Show AM or PM
+            </summary>
+        </member>
+        <member name="P:MohammadDayyanCalendar.MDCalendar.GetHour1">
+            <summary>
+            نمایش ساعت به صورت 00 ... 23
+            </summary>
+        </member>
+        <member name="P:MohammadDayyanCalendar.MDCalendar.GetHour2">
+            <summary>
+            نمایش ساعت به صورت 00 ... 12
+            </summary>
+        </member>
+        <member name="P:MohammadDayyanCalendar.MDCalendar.GetMinute">
+            <summary>
+            نمایش دقیقه به صورت 00 ... 59
+            </summary>
+        </member>
+        <member name="P:MohammadDayyanCalendar.MDCalendar.GetSecond">
+            <summary>
+            نمایش ثانیه به صورت 00 ... 59
+            </summary>
+        </member>
+    </members>
+</doc>
